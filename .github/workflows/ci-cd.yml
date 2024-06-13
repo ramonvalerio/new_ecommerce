@@ -1,1 +1,31 @@
-name: .NET  echo. echo on:  echo   push:  echo     branches: [ "main" ]  echo   pull_request:  echo     branches: [ "main" ]  echo. echo jobs:  echo   build:  echo     runs-on: ubuntu-latest  echo. echo     steps:  echo     - name: Checkout code  echo       uses: actions/checkout@v2  echo. echo     - name: Setup .NET  echo       uses: actions/setup-dotnet@v2  echo       with:  echo         dotnet-version: '8.0.x'  echo. echo     - name: Install dependencies  echo       run: dotnet restore  echo. echo     - name: Build project  echo       run: dotnet build --configuration Release --no-restore  echo. echo     - name: Run tests  echo       run: dotnet test --no-restore --verbosity normal 
+name: .NET
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Install dependencies
+      run: dotnet restore
+
+    - name: Build project
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Run tests
+      run: dotnet test --no-restore --verbosity normal
