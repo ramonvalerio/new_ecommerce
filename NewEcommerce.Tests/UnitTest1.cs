@@ -8,7 +8,7 @@ public class UnitTest1
     public void Test1()
     {
         // Arrange
-        var item = false;
+        var item = true;
 
         // Act
         var expected = item;
