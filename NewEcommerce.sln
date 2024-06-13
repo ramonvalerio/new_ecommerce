@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewEcommerce.Domain", "NewE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewEcommerce.Infrastructure", "NewEcommerce.Infrastructure\NewEcommerce.Infrastructure.csproj", "{3307A2F1-4189-4F23-A4ED-C760251DA1B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewEcommerce.Tests", "NewEcommerce.Tests\NewEcommerce.Tests.csproj", "{CEFAA100-8408-4FBD-A187-649764A04206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{3307A2F1-4189-4F23-A4ED-C760251DA1B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3307A2F1-4189-4F23-A4ED-C760251DA1B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3307A2F1-4189-4F23-A4ED-C760251DA1B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEFAA100-8408-4FBD-A187-649764A04206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFAA100-8408-4FBD-A187-649764A04206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFAA100-8408-4FBD-A187-649764A04206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFAA100-8408-4FBD-A187-649764A04206}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
